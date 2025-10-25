@@ -3,6 +3,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   server: {
     preset: "cloudflare_pages",
+    rollupConfig: {
+      external: ["node:async_hooks"],
+    },
   },
   vite: {
     plugins: [tailwindcss()],
