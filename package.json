@@ -5,7 +5,10 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "vinxi start",
-    "version": "vinxi version"
+    "version": "vinxi version",
+    "preview": "npm run build && npx wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
@@ -18,5 +21,9 @@
   },
   "engines": {
     "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "wrangler": "^4.45.0"
   }
 }
