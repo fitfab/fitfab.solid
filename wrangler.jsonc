@@ -8,6 +8,7 @@
   "main": "./.output/server/index.mjs",
   "compatibility_date": "2025-10-24",
   "compatibility_flags": ["nodejs_compat"],
+  "pages_build_output_dir": "build",
   "assets": {
     "binding": "ASSETS",
     "directory": "./.output/public",
